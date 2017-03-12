@@ -1,0 +1,146 @@
+body {
+  padding: 0;
+  font-family: 'helvetica', arial, sans-serif;
+}
+
+.sub-body {
+  background: #111;
+  padding: 40px;
+}
+
+h1 {
+  text-shadow: 1px 1px 2px black;
+}
+
+.carousel {
+  width: 720px;
+}
+
+.content {
+  color: #fff;
+  padding: 10px;
+  margin-top: 20px;
+  border: 2px solid black;
+  background: #fff;
+}
+
+.content-2 {
+  color: #fff;
+  padding: 10px;
+  margin-top: 20px;
+  background: #ffcc00;
+}
+
+.navigation-tabs {
+  margin-top: 20px;
+}
+
+/*Switch 1*/
+#switch {
+  position: relative;
+  display: inline-block;
+  width: 100px;
+  height: 38px;
+}
+
+#switch input {display:none;}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #333;
+  transition: 0.5s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 30px;
+  width: 30px;
+  left: 4px;
+  bottom: 4px;
+  background: white;
+  transition: 0.5s;
+}
+
+input:checked + .slider {
+  background-color: #ffcc00;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #ffcc00;
+}
+
+input:checked + .slider:before {
+  transform: translateX(62px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/*Switch 2*/
+#switch2 {
+  position: relative;
+  display: inline-block;
+  width: 100px;
+  height: 38px;
+}
+
+#switch2 input {display:none;}
+
+.slider2 {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #333;
+  transition: 0.5s;
+}
+
+.slider2:before {
+  position: absolute;
+  content: "";
+  height: 30px;
+  width: 30px;
+  left: 4px;
+  bottom: 4px;
+  background: white;
+  transition: 0.5s;
+}
+
+input:checked + .slider2 {
+  background-color: #87a900;
+}
+
+input:focus + .slider2 {
+  box-shadow: 0 0 1px #87a900;
+}
+
+input:checked + .slider2:before {
+  transform: translateX(62px);
+}
+
+/* Rounded sliders */
+.slider2.round {
+  border-radius: 34px;
+}
+
+.slider2.round:before {
+  border-radius: 50%;
+}
+
+footer {
+  padding: 10px;
+}
